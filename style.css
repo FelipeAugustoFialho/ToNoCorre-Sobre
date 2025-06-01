@@ -1,84 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-*{
+
+* {
 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color:black;
-   
+    color: black;
+
+}
+
+body {
+    background-image: url(./pag-Sobre.jpg);
+    background-size: cover;
+}
+
+
+nav {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+button {
+    background: linear-gradient(#5de0e6, #004aad);
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: 4px solid black;
+    font-size: 15px;
+    margin-top: 20px;
+    color: black;
+    font-weight: bolder;
+}
+
+button:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: #FFFFFF
+}
+
+.about {
+
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    width: 800px;
+    height: 530px;
+    margin-bottom: 49px;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    padding: 10px;
+    border: 4px solid black;
+
+
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 30px;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    gap: 30px;
+    height: 50px;
+    background-color: #202020;
+
+}
+a{
+    margin-top: 10px;
+}
+
+
+.pFooter {
+
+    font-size: 15px;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-top: 19px;
+    margin-left: 136px;
+    margin-right: 53px;
+    font-family: Poppins;
+}
+
+.bi-linkedin {
+    color: rgb(10, 100, 198);
+}
+
+.bi-google {
+    color: darkred;
+}
+
+.bi-github {
+
+    color: #FFFFFF;
+
+}
+
+.bi-browser-edge {
+    color: #004aad;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    nav {
+        display: block;
     }
 
-    body{
-        background-image:url(./pag-Sobre.jpg);
-        background-size: cover;
+    div {
+        width: 380px;
+        height: 470px;
+
     }
 
-
-    nav{
-        display: flex;
-        gap: 40px;
-        text-align: center;
-        justify-content: center;
-        }
-
-        button{
-            background:linear-gradient(#5de0e6,#004aad);
-            width: 150px;
-            height: 40px;
-            border-radius: 50px;
-            border: 4px solid black;
-            font-size: 15px;
-            margin-top: 20px;
-            color: black;
-            font-weight: bolder;
-            }
-            button:hover{  text-decoration: none;
-                color: #FFFFFF;
-                cursor: pointer;
-                border: #FFFFFF
-                }
-
-                .about{
-                
-                    text-align: center;
-                    margin: auto;
-                    margin-top: 40px;
-                    width: 800px;
-                    height: 600px;
-                    background-color:#FFFFFF ;
-                    opacity: 0.8;
-                    padding: 10px;
-                    border: 4px solid black;
-                    
-
-                }
-                    
-                h2{
-                    font-size: 35px;
-                    margin-bottom: 30px;
-                    margin-top: 20px;
-                }
-                p{
-                    margin-top: 30px;
-                    font-size: 25px;
-                    justify-content: center;
-                    text-align: center;
-                }
-
-               
-
-                @media screen and (max-width: 700px){
-                    nav{
-                        display: block;
-                    }
-
-                    div{
-                        width: 380px;
-                        height: 470px;
-                       
-                    }
-                    p{
-                        font-size: 15px;
-                    }
-                }
-                 
+    p {
+        font-size: 15px;
+    }
+}
