@@ -236,6 +236,9 @@ a {
         background-color: #202020;
         margin-top: 230px;
     }
+    a {
+        margin-left: 60px;
+    }
 
     
    .pFooter{
