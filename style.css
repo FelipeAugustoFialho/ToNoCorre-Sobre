@@ -12,6 +12,7 @@
 body {
     background-image: url(./pag-Sobre.jpg);
     background-size: cover;
+    overflow: hidden;
 }
 
 
@@ -20,6 +21,13 @@ nav {
     gap: 40px;
     text-align: center;
     justify-content: center;
+}
+
+.navMobile {
+
+    display: none;
+
+
 }
 
 button {
@@ -76,14 +84,13 @@ footer {
     justify-content: center;
     font-size: 30px;
     gap: 30px;
-    height: 50px;
+    height: 51px;
     background-color: #202020;
 
-}
-a{
-    margin-top: 10px;
-}
 
+
+
+}
 
 .pFooter {
 
@@ -95,6 +102,34 @@ a{
     margin-right: 53px;
     font-family: Poppins;
 }
+
+.p2Footer {
+
+    font-size: 15px;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-top: 19px;
+    margin-left: 136px;
+    margin-right: 53px;
+    font-family: Poppins;
+}
+
+.p3Footer {
+
+    font-size: 15px;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-top: 19px;
+    margin-left: 136px;
+    margin-right: 53px;
+    font-family: Poppins;
+}
+
+a {
+    margin-top: 10px;
+}
+
+
 
 .bi-linkedin {
     color: rgb(10, 100, 198);
@@ -114,15 +149,68 @@ a{
     color: #004aad;
 }
 
+.menu-options {
+    display: none;
+    background-color: #000;
+    opacity: 0.97;
+    padding: 10px;
+    position: absolute;
+    right: -20px;
+    top: 65px;
+    border-radius: 20px;
+    width: 187px;
+}
 
+.menu-options li {
+    list-style: none;
+    margin: 10px 10px 10px -10px;
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+.menu-options li a {
+    color: white;
+    text-decoration: none;
+}
 
 
 @media screen and (max-width: 700px) {
     nav {
-        display: block;
+        /*display: block;*/
+        display: none;
     }
 
-    div {
+    .navMobile {
+        display: grid;
+    }
+
+    .bi-list {
+        font-size: 50px;
+        cursor: pointer;
+        color: #FFFFFF
+    }
+
+    .bi-list:hover {
+        color: #000;
+        background: linear-gradient(#5de0e6, #004aad);
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    .list {
+        display: grid;
+        margin: auto;
+        background-color: black;
+        width: 150px;
+    }
+
+    .menu-options.active {
+        display: grid;
+        margin-right: 145px;
+        z-index: 1;
+    }
+
+    .menu-options.active+div {
         width: 380px;
         height: 470px;
 
@@ -131,4 +219,53 @@ a{
     p {
         font-size: 15px;
     }
+
+    .about {
+        width: 95%;
+        height: 440px;
+    }
+
+    footer {
+        color: #FFFFFF;
+        display: block;
+        justify-content: center;
+        font-size: 25px;
+        gap: 30px;
+        height: 77px;
+        width: 100vw;
+        background-color: #202020;
+        margin-top: 146px;
+    }
+
+    a {
+        margin-left: 60px;
+    }
+
+   .pFooter{
+        font-size: 12px;
+        margin-left: -140px;
+        margin-top: -22px;
+    }
+
+    .p2Footer {
+        font-size: 12px;
+        justify-content: center;
+        margin-top: -18px;
+        margin-left: 189px;
+        margin-right: 36px;
+
+
+    }
+
+    .p3Footer {
+
+        font-size: 12px;
+        justify-content: center;
+        margin-top: 1px;
+        margin-bottom: 8px;
+        margin-left: 50px;
+        margin-right: 35px;
+
+    }
+
 }
