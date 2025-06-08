@@ -72,7 +72,7 @@ h2 {
 }
 
 p {
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 25px;
     justify-content: center;
     text-align: center;
@@ -162,6 +162,7 @@ a {
 
 .bi-linkedin {
     color: rgb(10, 100, 198);
+    margin-left: 25px;
     
 }
 
@@ -267,8 +268,7 @@ a {
         height: 77px;
         width: 100vw;
         background-color: #202020;
-        /*margin-top: 200px;*/
-        margin-top: 220px;
+       
     }
    .links {
         margin-left: 60px;
@@ -285,7 +285,7 @@ a {
         font-size: 12px;
         justify-content: center;
         margin-top: -18px;
-        margin-left: 189px;
+        margin-left: 150px;
         margin-right: 36px;
 
 
